@@ -1,0 +1,44 @@
+.start-page {
+    background-color: #ffe4e1;
+    /* Light pink background */
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* Full height of the viewport */
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #d36e6e;
+    /* A darker pink for the title */
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.start-button {
+    background-color: #d36e6e;
+    /* Button color matching the title */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #b25c5c;
+    /* Slightly darker shade when hovering */
+}

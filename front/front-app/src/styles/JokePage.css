@@ -1,0 +1,43 @@
+.joke-page {
+    background-color: #fff0f5;
+    /* Light pink background */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #d36e6e;
+    /* Dark pink color */
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.vote-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.vote-button {
+    background-color: #d36e6e;
+    /* Matching the joke text color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.vote-button:hover {
+    background-color: #b25c5c;
+    /* Darker shade when hovering */
+}

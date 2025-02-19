@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  if joke
+    h2= joke.question
+    p= joke.answer
+
+    h3 Votes:
+    ul
+      each vote in joke.votes
+        li= vote.label + ": " + vote.value
+  else
+    p No joke available.
+
+  button(onclick="window.location.reload()") Get Another Joke
