@@ -7,7 +7,6 @@ const cors = require("cors");
 
 const mongoose = require('mongoose');
 
-
 const mongoDB = 'mongodb://localhost:27017/jokeDB';
 
 mongoose.connect(mongoDB, {});
@@ -20,17 +19,14 @@ mongoose.connection.on('error', (err) => {
   console.error(`Error connecting to MongoDB: ${err}`);
 });
 
-
-
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-
-var jokesRouter = require('./routes/jokes'); // Import the jokes router
+var jokesRouter = require('./routes/jokes'); // Joke-related API routes
 
 var app = express();
-app.use(cors());
+app.use(cors()); // Enable CORS for cross-origin requests
 
-// view engine setup
+// View engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
@@ -42,14 +38,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/api/jokes', jokesRouter);
+app.use('/api/jokes', jokesRouter); // Use jokes routes
 
-// catch 404 and forward to error handler
+// Error handling
 app.use(function (req, res, next) {
   res.status(404).json({ message: "Route not found" });
 });
 
-// error handler
 app.use(function (err, req, res, next) {
   console.error(err.stack);
   res.status(500).json({

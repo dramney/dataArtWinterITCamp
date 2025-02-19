@@ -1,6 +1,5 @@
 .joke-page {
     background-color: #fff0f5;
-    /* Light pink background */
     padding: 20px;
     text-align: center;
     border-radius: 14px;
@@ -13,7 +12,6 @@
 h2 {
     font-size: 1.8rem;
     color: #d36e6e;
-    /* Dark pink color */
 }
 
 p {
@@ -30,7 +28,6 @@ p {
 
 .vote-button {
     background-color: #d36e6e;
-    /* Matching the joke text color */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -42,22 +39,17 @@ p {
 
 .vote-button:hover {
     background-color: #b25c5c;
-    /* Darker shade when hovering */
 }
 
 .vote-button.selected {
     background-color: #ffcccb;
-    /* Світлий червоний, коли обрано */
     color: black;
     font-weight: bold;
 }
 
 
-
-/* Стиль для кнопки "Next Joke" */
 .next-button {
     background-color: #b25c5c;
-    /* Яскраво-рожевий */
     color: white;
     border: none;
     padding: 12px 24px;
@@ -71,10 +63,8 @@ p {
 
 .next-button:hover {
     background-color: #984a4a;
-    /* Трохи темніший при наведенні */
 }
 
-/* Розташування кнопки по центру */
 .next-button-container {
     display: flex;
     justify-content: center;

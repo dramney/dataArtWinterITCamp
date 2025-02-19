@@ -8,7 +8,7 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          {/* Define the routes using element instead of component */}
+          {/* Define the routes using element */}
           <Route path="/" element={<StartPage />} />
           <Route path="/joke" element={<JokePage />} />
         </Routes>
